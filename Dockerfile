@@ -1,5 +1,5 @@
 # Build stage
-FROM node:20-alpine AS build
+FROM node:18-bullseye-slim 
 WORKDIR /app
 COPY package*.json ./
 RUN npm ci
